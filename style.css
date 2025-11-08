@@ -303,6 +303,7 @@ nav ul li a.active {
     flex: 1;
 }
 
+/* About Image Styles */
 .about-image {
     flex: 1;
     text-align: center;
@@ -311,12 +312,11 @@ nav ul li a.active {
 .profile-img {
     width: 300px;
     height: 300px;
-    border-radius: 50%;
+    border-radius: 8px;
     object-fit: cover;
     border: 5px solid white;
     box-shadow: var(--shadow);
 }
-
 .upload-btn {
     display: inline-block;
     margin-top: 15px;
