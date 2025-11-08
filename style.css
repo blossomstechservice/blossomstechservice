@@ -173,6 +173,13 @@ nav ul li a.active {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block; 
+    }
+    
+}
+
 /* Page Styles */
 .page-header {
     background: linear-gradient(135deg, var(--primary) 0%, #6c3483 100%);
@@ -621,9 +628,6 @@ footer {
         text-align: center;
     }
     
-    .mobile-menu-btn {
-        display: block;
-    }
     
     .faq-grid {
         grid-template-columns: 1fr;
