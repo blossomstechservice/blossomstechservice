@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | TechSolutions Pro</title>
+    <title>Contact | BlossomsTechService</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container header-container">
-            <a href="index.html" class="logo">TechSolutions Pro</a>
+            <a href="index.html" class="logo">BlossomsTechService</a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -38,11 +38,11 @@
                     <h2>Get In Touch</h2>
                     <form id="contactForm">
                         <div class="form-group">
-                            <label for="name">Name</label>
+                            <label for="name">Name *</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email">Email *</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
@@ -59,12 +59,25 @@
                                 <option value="reports">Report Generation</option>
                                 <option value="webapps">Web App Development</option>
                                 <option value="ai">AI Solutions</option>
+                                <option value="integrations">Integrations</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="budget">Project Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-1k">Under $1,000</option>
+                                <option value="1k-5k">$1,000 - $5,000</option>
+                                <option value="5k-10k">$5,000 - $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-plus">$25,000+</option>
+                                <option value="not-sure">Not sure yet</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or how I can help..." required></textarea>
                         </div>
                         <button type="submit" class="btn">Send Message</button>
                     </form>
@@ -72,34 +85,90 @@
                 
                 <div class="contact-info">
                     <h2>Contact Information</h2>
+                    
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h3>Email</h3>
-                            <p>info@techsolutionspro.com</p>
+                            <p>info@blossomstechservice.com</p>
+                            <p>support@blossomstechservice.com</p>
                         </div>
                     </div>
+                    
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h3>Phone</h3>
                             <p>(555) 123-4567</p>
+                            <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
                         </div>
                     </div>
+                    
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h3>Location</h3>
-                            <p>Based Remotely - Serving Clients Nationwide</p>
+                            <p>Based Remotely</p>
+                            <p>Serving Clients Nationwide</p>
                         </div>
                     </div>
+                    
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
                         <div>
                             <h3>Business Hours</h3>
-                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM EST</p>
                             <p>Weekends: By appointment</p>
+                            <p>Emergency support available</p>
                         </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-comments"></i>
+                        <div>
+                            <h3>Quick Response</h3>
+                            <p>I typically respond to inquiries within 2-4 business hours during normal business hours.</p>
+                            <p>Urgent requests are prioritized.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <div>
+                            <h3>Schedule a Consultation</h3>
+                            <p>Prefer to talk? Schedule a free 30-minute consultation to discuss your project needs.</p>
+                            <a href="#" class="btn" style="margin-top: 10px;">Schedule Call</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-section" style="margin-top: 80px;">
+                <h2 style="text-align: center; margin-bottom: 40px;">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>What's your typical response time?</h3>
+                        <p>I aim to respond to all inquiries within 2-4 business hours during normal business hours. Urgent support requests receive priority attention.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you offer ongoing support contracts?</h3>
+                        <p>Yes, I offer flexible support contracts tailored to your business needs, from basic maintenance to comprehensive managed services.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can you work with my existing service providers?</h3>
+                        <p>Absolutely! I specialize in collaborating with existing providers to enhance your systems without disrupting your current workflow.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What's your pricing structure?</h3>
+                        <p>I offer project-based pricing, hourly rates, and monthly retainer options depending on your needs. Contact me for a customized quote.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you provide emergency support?</h3>
+                        <p>Yes, emergency support is available for critical issues that impact your business operations.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What industries do you serve?</h3>
+                        <p>I work with businesses across various industries including e-commerce, healthcare, finance, manufacturing, and professional services.</p>
                     </div>
                 </div>
             </div>
@@ -107,7 +176,50 @@
     </section>
 
     <footer>
-        <!-- Footer content -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>BlossomsTechService</h3>
+                    <p>Providing expert IT support, web development, and data management services to help businesses thrive in the digital age.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#it-support">IT Support</a></li>
+                        <li><a href="services.html#web-design">Web UI Design</a></li>
+                        <li><a href="data-management.html">Data Management</a></li>
+                        <li><a href="services.html#reports">Report Generation</a></li>
+                        <li><a href="services.html#webapps">Web App Development</a></li>
+                        <li><a href="innovation.html">AI & Innovation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="web-platforms.html">Web Platforms</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@blossomstechservice.com</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Based Remotely - Serving Clients Nationwide</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 BlossomsTechService. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
